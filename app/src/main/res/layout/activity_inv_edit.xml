@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inv_Edit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding=".1in">
+
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height=".4in"
+            android:hint="Item Name"
+            android:inputType="text"
+            android:textSize=".2in" />
+
+        <EditText
+            android:id="@+id/itemDescription"
+            android:layout_width="match_parent"
+            android:layout_height=".4in"
+            android:hint="Item Description"
+            android:inputType="text"
+            android:textSize=".2in" />
+
+        <EditText
+            android:id="@+id/itemQuantity"
+            android:layout_width="match_parent"
+            android:layout_height=".4in"
+            android:hint="Item Quantity"
+            android:inputType="number"
+            android:textSize=".2in" />
+
+        <EditText
+            android:id="@+id/itemPrice"
+            android:layout_width="match_parent"
+            android:layout_height=".4in"
+            android:hint="Item Price"
+            android:inputType="numberDecimal"
+            android:textSize=".2in" />
+
+        <EditText
+            android:id="@+id/itemSMSContact"
+            android:layout_width="match_parent"
+            android:layout_height=".4in"
+            android:hint="SMS Contact"
+            android:inputType="numberDecimal"
+            android:textSize=".2in" />
+
+        <Button
+            android:id="@+id/addItemButton"
+            android:layout_width="match_parent"
+            android:layout_height=".5in"
+            android:text="Add / Update Item"
+
+            />
+
+        <Button
+            android:id="@+id/deleteItemButton"
+            android:layout_width="match_parent"
+            android:layout_height=".5in"
+            android:text="Delete Item" />
+
+        <Button
+            android:id="@+id/SMSButton"
+            android:layout_width="match_parent"
+            android:layout_height=".5in"
+            android:text="SMS Send" />
+
+        <Button
+            android:id="@+id/BackButton"
+            android:layout_width="match_parent"
+            android:layout_height=".5in"
+            android:text="Back" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

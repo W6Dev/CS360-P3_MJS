@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding=".1in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/createUserButton"
+            android:layout_width="1.50in"
+            android:layout_gravity="center"
+            android:layout_height=".3in"
+            android:text="Create New User"
+            />
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0in"
+            android:text="User ID:"
+            android:textSize=".15in" />
+        <EditText
+            android:id="@+id/nameUser"
+            android:layout_width="match_parent"
+            android:layout_height=".40in"
+            android:inputType="text"
+            android:textSize=".2in" />
+        <TextView
+            android:layout_marginTop=".30in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize=".15in" />
+        <EditText
+            android:id="@+id/namePassword"
+            android:layout_width="match_parent"
+            android:layout_height=".40in"
+            android:inputType="textPassword"
+            android:textSize=".2in" />
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="2.0in"
+            android:layout_marginTop=".2in"
+            android:layout_gravity="center"
+            android:layout_height=".3in"
+            android:text="Log in"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
